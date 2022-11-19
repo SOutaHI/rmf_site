@@ -66,6 +66,9 @@ pub use path::*;
 pub mod physical_camera;
 pub use physical_camera::*;
 
+pub mod robot;
+pub use robot::*;
+
 pub mod pose;
 pub use pose::*;
 
@@ -158,6 +161,7 @@ impl Plugin for SitePlugin {
             .add_plugin(RecallPlugin::<RecallAssetSource>::default())
             .add_plugin(ChangePlugin::<PixelsPerMeter>::default())
             .add_plugin(ChangePlugin::<PhysicalCameraProperties>::default())
+            // .add_plugin(ChangePlugin::<RobotProperties>::default())
             .add_plugin(DeletionPlugin)
             .add_system(load_site)
             .add_system_set(SystemSet::on_enter(SiteState::Display).with_system(site_display_on))

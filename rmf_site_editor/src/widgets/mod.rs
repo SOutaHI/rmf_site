@@ -71,6 +71,7 @@ pub struct ChangeEvents<'w, 's> {
     pub asset_source: EventWriter<'w, 's, Change<AssetSource>>,
     pub pixels_per_meter: EventWriter<'w, 's, Change<PixelsPerMeter>>,
     pub physical_camera_properties: EventWriter<'w, 's, Change<PhysicalCameraProperties>>,
+    // pub robot_properties: EventWriter<'w, 's, Change<RobotProperties>>,
 }
 
 /// We collect all the events into its own SystemParam because we are not

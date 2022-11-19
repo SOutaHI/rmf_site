@@ -78,6 +78,9 @@ pub use path::*;
 pub mod physical_camera;
 pub use physical_camera::*;
 
+pub mod robot;
+pub use robot::*;
+
 pub mod point;
 pub use point::*;
 

@@ -257,6 +257,7 @@ impl BuildingMap {
                     measurements,
                     models,
                     physical_cameras,
+                    // robots,
                     walls,
                 },
             );

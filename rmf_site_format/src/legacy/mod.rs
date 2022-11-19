@@ -28,6 +28,7 @@ pub mod measurement;
 pub mod model;
 pub(crate) mod optimization;
 pub mod physical_camera;
+pub mod robot;
 pub mod rbmf;
 pub mod vertex;
 pub mod wall;
