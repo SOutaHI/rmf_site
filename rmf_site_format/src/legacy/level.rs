@@ -1,6 +1,6 @@
 use super::{
     door::Door, fiducial::Fiducial, floor::Floor, lane::Lane, measurement::Measurement,
-    model::Model, physical_camera::PhysicalCamera, vertex::Vertex, wall::Wall,
+    model::Model, physical_camera::PhysicalCamera, robot::Robot, vertex::Vertex, wall::Wall,
 };
 use glam::{DAffine2, DVec2};
 use serde::{Deserialize, Serialize};
@@ -48,6 +48,8 @@ pub struct Level {
     pub floors: Vec<Floor>,
     #[serde(default)]
     pub physical_cameras: Vec<PhysicalCamera>,
+    #[serde(default)]
+    pub robots: Vec<Robot>,
     #[serde(default)]
     pub fiducials: Vec<Fiducial>,
     #[serde(skip)]

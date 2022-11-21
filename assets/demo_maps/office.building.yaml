@@ -135,7 +135,8 @@ levels:
       - [camera1, 1573, 521, 2.0, 0.3, 1.57, 2.0, 480, 320, 30]
       - [camera2, 746, 1245, 2.0, 0.3, 0.4, 2.0, 480, 320, 30]
     robots:
-      - [model_name: test/fetch.glb, name: robot1, 1573, 521, 2.0, 0.3, 1.57, 2.0, 480, 320, 30]
+      - {model_name: test/fetch.glb, name: robot1, x: 1573, y: 521,  z: 0, yaw: 1.57, image_fov: 0,image_width: 0,image_height: 0,update_rate: 0}
+      - {model_name: test/fetch.glb, name: robot2, x: 1573, y: 1021, z: 0, yaw: 1.57, image_fov: 0,image_width: 0,image_height: 0,update_rate: 0}
     vertices:
       - [80.27, 1024.974, 0, ""]
       - [580.795, 43.396, 0, ""]

@@ -231,6 +231,12 @@ impl BuildingMap {
                 physical_cameras.insert(site_id.next().unwrap(), cam.to_site());
             }
 
+            let mut robots = BTreeMap::new();
+            for robo in &level.robots {
+                robots.insert(site_id.next().unwrap(), robo.to_site());
+            }
+
+
             let mut walls = BTreeMap::new();
             for wall in &level.walls {
                 let site_wall = wall.to_site(&vertex_to_anchor_id)?;
@@ -257,7 +263,7 @@ impl BuildingMap {
                     measurements,
                     models,
                     physical_cameras,
-                    // robots,
+                    robots,
                     walls,
                 },
             );

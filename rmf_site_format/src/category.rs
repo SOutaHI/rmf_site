@@ -39,6 +39,7 @@ pub enum Category {
     Measurement,
     Model,
     Camera,
+    Robot,
     Drawing,
 }
 
@@ -57,6 +58,7 @@ impl Category {
             Self::Measurement => "Measurement",
             Self::Model => "Model",
             Self::Camera => "Camera",
+            Self::Robot => "Robot",
             Self::Drawing => "Drawing",
         }
     }

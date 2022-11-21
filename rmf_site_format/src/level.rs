@@ -50,6 +50,7 @@ pub struct Level {
     pub measurements: BTreeMap<u32, Measurement<u32>>,
     pub models: BTreeMap<u32, Model>,
     pub physical_cameras: BTreeMap<u32, PhysicalCamera>,
+    pub robots: BTreeMap<u32, Robot>,
     pub walls: BTreeMap<u32, Wall<u32>>,
 }
 
@@ -66,6 +67,7 @@ impl Level {
             measurements: Default::default(),
             models: Default::default(),
             physical_cameras: Default::default(),
+            robots: Default::default(),
             walls: Default::default(),
         }
     }
